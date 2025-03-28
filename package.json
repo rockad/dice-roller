@@ -1,0 +1,25 @@
+{
+  "name": "dice-roller",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "next": "15.2.4"
+  },
+  "devDependencies": {
+    "typescript": "5.8.2",
+    "@types/node": "22.13.14",
+    "@types/react": "19.0.12",
+    "@types/react-dom": "19.0.4",
+    "eslint": "9.23.0",
+    "eslint-config-next": "15.2.4",
+    "@eslint/eslintrc": "3.3.1"
+  }
+}
