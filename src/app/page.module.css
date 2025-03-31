@@ -1,18 +1,55 @@
-.page {
-  min-height: 100svh;
-  padding: 80px;
-  font-family: var(--font-geist-sans);
-  display: flex;
-  flex-direction: column;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-.main {
+.joinGameContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 1rem;
 }
 
-.footer {
-  display: flex;
-  margin-top: auto;
-  justify-content: right;
+.inputField {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.buttonPrimary {
+  composes: button;
+  background-color: #3b82f6;
+  color: white;
+}
+
+.buttonPrimary:hover {
+  background-color: #2563eb;
+}
+
+.gameContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .gameContainer {
+    grid-template-columns: 1fr 1fr;
+  }
 }
